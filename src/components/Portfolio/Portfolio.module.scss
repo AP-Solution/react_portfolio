@@ -1,0 +1,45 @@
+@import '../../styles/mixins.scss';
+
+.wrapper {
+  width: 100%;
+  min-height: calc(100vh - 78px);
+  box-shadow: 0 0 20px 1px black inset;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.item {
+  min-height: 200px;
+  border: 2px solid black;
+
+  &_1 {
+    background-color: #EB356F;
+  }
+
+  &_2 {
+    background-color: #F6BF44;
+  }
+
+  &_3 {
+    background-color: #E9612C;
+  }
+
+  &_4 {
+    background-color: #7ED321;
+  }
+
+  &_5 {
+    background-color: #7844E3;
+  }
+
+  &_6 {
+    background-color: #4A88F7;
+  }
+}
+
+/* #EB356F, #F6BF44, #E9612C, #7ED321, #7844E3, #4A88F7 */

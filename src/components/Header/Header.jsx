@@ -10,7 +10,7 @@ export const Header = () => {
     <header className={styles.header}>
       <h1 className={styles.title}>AP_SOLUTION</h1>
       <MenuIcon isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
-      <Navigation isMenuActive={isMenuActive} />
+      <Navigation isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
     </header>
   );
 };

@@ -5,5 +5,7 @@
   font-size: calc(10px + 2vmin);
   font-family: Helvetica, sans-serif;
   min-height: 200vh;
+  display: flex;
+  flex-direction: column;
 }
 
